@@ -22,11 +22,28 @@ public class PlayerController : MonoBehaviour {
 		UpdatePosition();
 	}
 	void UpdatePosition(){
+		Vector2 cornerTopRight = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
+		Vector2 cornerLeftBot = Camera.main.ScreenToWorldPoint(new Vector2(0, 0));
+
 		rb.position += new Vector2(
 			Input.GetAxis("Horizontal") * speed * Time.deltaTime,
 			Input.GetAxis("Vertical") * speed * Time.deltaTime
 		);
-        rb.position += new Vector2(0, 0.01f); //camera follow
+		//camera follow
+        rb.position += new Vector2(0, 0.01f);
+
+		//fix position
+		Vector2 fixedPosition = new Vector2(rb.position.x, rb.position.y);
+		if(rb.position.x > cornerTopRight.x)
+			fixedPosition.x = cornerTopRight.x;
+		else if(rb.position.x < cornerLeftBot.x)
+			fixedPosition.x = cornerLeftBot.x;
+		if(rb.position.y > cornerTopRight.y)
+			fixedPosition.y = cornerTopRight.y;
+		else if(rb.position.y < cornerLeftBot.y)
+			fixedPosition.y = cornerLeftBot.y;
+		
+		rb.position = fixedPosition;
 	}
 
 	void Shoot(){
