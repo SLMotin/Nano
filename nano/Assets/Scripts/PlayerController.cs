@@ -10,9 +10,10 @@ public class PlayerController : MonoBehaviour {
 
 	float speed = 5f;
 	float shootTime = 0.1f;
-
+	Vector2 shipSize;
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
+		shipSize = GetComponent<BoxCollider2D>().size / 2f;
 	}
 	
 	void Update () {
@@ -34,14 +35,14 @@ public class PlayerController : MonoBehaviour {
 
 		//fix position
 		Vector2 fixedPosition = new Vector2(rb.position.x, rb.position.y);
-		if(rb.position.x > cornerTopRight.x)
-			fixedPosition.x = cornerTopRight.x;
-		else if(rb.position.x < cornerLeftBot.x)
-			fixedPosition.x = cornerLeftBot.x;
-		if(rb.position.y > cornerTopRight.y)
-			fixedPosition.y = cornerTopRight.y;
-		else if(rb.position.y < cornerLeftBot.y)
-			fixedPosition.y = cornerLeftBot.y;
+		if(rb.position.x > cornerTopRight.x - shipSize.x)
+			fixedPosition.x = cornerTopRight.x - shipSize.x;
+		else if(rb.position.x < cornerLeftBot.x + shipSize.x)
+			fixedPosition.x = cornerLeftBot.x + shipSize.x;
+		if(rb.position.y > cornerTopRight.y - shipSize.y)
+			fixedPosition.y = cornerTopRight.y - shipSize.y;
+		else if(rb.position.y < cornerLeftBot.y + shipSize.y)
+			fixedPosition.y = cornerLeftBot.y + shipSize.y;
 		
 		rb.position = fixedPosition;
 	}
