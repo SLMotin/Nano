@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour {
 			Input.GetAxis("Vertical") * speed * Time.deltaTime
 		);
 		//camera follow
-        rb.position += new Vector2(0, 0.01f);
+        rb.position += CameraMoviment.Speed * Time.deltaTime;
 
 		//fix position
 		Vector2 fixedPosition = new Vector2(rb.position.x, rb.position.y);
