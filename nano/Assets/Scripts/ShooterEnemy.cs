@@ -2,25 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShooterEnemy : MonoBehaviour{
+public class ShooterEnemy : BaseEnemy{
     GameObject player;
     float speed = 0.8f;
     float spanwTime = 1f;
+    Vector3 direction;
     void Start(){
         player = GameObject.FindGameObjectWithTag("Player");
+        direction = new Vector3(
+            Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2, 0, 0)).x - transform.position.x,
+            0,
+            0
+        ).normalized;
+        life = 30f;
     }
 
     void Update(){
-        if(CameraMoviment.YCameraValue >= transform.position.y)
-            transform.position += ((Vector3)CameraMoviment.Speed * 0.8f + (new Vector3(1, 0, 0) * speed)) * Time.deltaTime;
-
-        Vector2 botLeft = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));
-        Vector2 topRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
-
-        if(transform.position.x > botLeft.x && transform.position.x < topRight.x && transform.position.y > botLeft.y && transform.position.y < topRight.y)
+        if(CanMove())
+            Move();
+        if(CanShoot())
             Shoot();
     }
-
+    void Move(){
+        transform.position += ((Vector3)CameraMoviment.Speed + direction) * speed * Time.deltaTime;
+    }
     void Shoot(){
         if(spanwTime <= 0){
             Debug.Log("Shoot little touch enemys");
