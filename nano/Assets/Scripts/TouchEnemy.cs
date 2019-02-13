@@ -6,6 +6,7 @@ public class TouchEnemy : MonoBehaviour{
     GameObject player;
     float speed = 0.8f;
     float life = 10f;
+    float repelForce = 0.5f;
 
     void Start(){
         player = GameObject.FindGameObjectWithTag("Player");
@@ -21,9 +22,11 @@ public class TouchEnemy : MonoBehaviour{
     }
 
     void OnTriggerEnter2D(Collider2D col){
-        if(col.tag == "NormalBullet"){
-            Debug.Log(1);
+        if(col.tag == "NormalBullet")
             life -= 1f;
+        else if(col.tag == "Enemy"){
+            Vector3 direction = transform.position - col.transform.position;
+            transform.position += direction * repelForce * Time.deltaTime;
         }
         if(life <= 0)
             Destroy(gameObject);
