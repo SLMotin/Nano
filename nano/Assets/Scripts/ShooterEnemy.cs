@@ -15,6 +15,9 @@ public class ShooterEnemy : BaseEnemy{
             0
         ).normalized;
         life = 30f;
+
+        //face = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        faceSprites = Resources.LoadAll<Sprite>("Face1");
     }
 
     void Update(){

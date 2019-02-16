@@ -6,6 +6,8 @@ public class BaseEnemy : MonoBehaviour{
 
     public float life = 1f;
     float repelForce = 0.5f;
+    public SpriteRenderer face;
+    public Sprite[] faceSprites;
 
     protected bool CanMove(){
         if(CameraMoviment.YCameraValue >= transform.position.y)
@@ -24,8 +26,10 @@ public class BaseEnemy : MonoBehaviour{
     }
 
     void OnTriggerEnter2D(Collider2D col){
-        if(col.tag == "NormalBullet")
+        if(col.tag == "NormalBullet"){
             life -= 1f;
+            face.sprite = faceSprites[1];
+        }
         else if(col.tag == "Enemy"){
             Vector3 direction = transform.position - col.transform.position;
             transform.position += direction * repelForce * Time.deltaTime;
