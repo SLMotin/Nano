@@ -8,6 +8,8 @@ public class BaseEnemy : MonoBehaviour{
     float repelForce = 0.5f;
     public SpriteRenderer face;
     public Sprite[] faceSprites;
+    public bool gotHit = false;
+    private float hitTimer = 0f;
 
     protected bool CanMove(){
         if(CameraMoviment.YCameraValue >= transform.position.y)
@@ -25,10 +27,27 @@ public class BaseEnemy : MonoBehaviour{
             return false;
     }
 
+    void GotHit(){
+        hitTimer = 1f;
+    }
+
+    public void CheckSpriteFace(){
+        if(hitTimer <= 0 && gotHit){
+            face.sprite = faceSprites[0];
+            gotHit = false;
+        }
+        else if(hitTimer > 0 && !gotHit){
+            face.sprite = faceSprites[1];
+            gotHit = true;
+        }
+        if(hitTimer > 0)
+            hitTimer -= Time.deltaTime;
+    }
+
     void OnTriggerEnter2D(Collider2D col){
         if(col.tag == "NormalBullet"){
             life -= 1f;
-            face.sprite = faceSprites[1];
+            GotHit();
         }
         else if(col.tag == "Enemy"){
             Vector3 direction = transform.position - col.transform.position;
