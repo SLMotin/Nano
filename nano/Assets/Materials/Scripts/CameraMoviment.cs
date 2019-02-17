@@ -13,6 +13,6 @@ public class CameraMoviment : MonoBehaviour{
 
     void LateUpdate(){
         transform.position += (Vector3) CameraMoviment.Speed * Time.deltaTime;
-        CameraMoviment.YCameraValue = transform.position.y + Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height, 0)).y;
+        CameraMoviment.YCameraValue = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height, 0)).y;
     }
 }

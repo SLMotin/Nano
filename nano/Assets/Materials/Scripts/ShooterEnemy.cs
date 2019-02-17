@@ -5,8 +5,9 @@ using UnityEngine;
 public class ShooterEnemy : BaseEnemy{
     GameObject player;
     float speed = 0.8f;
-    float spanwTime = 1f;
+    float spanwTime = 2.5f;
     Vector3 direction;
+    GameObject touchEnemy;
     void Start(){
         player = GameObject.FindGameObjectWithTag("Player");
         direction = new Vector3(
@@ -16,8 +17,10 @@ public class ShooterEnemy : BaseEnemy{
         ).normalized;
         life = 30f;
 
-        //face = transform.GetChild(0).GetComponent<SpriteRenderer>();
-        faceSprites = Resources.LoadAll<Sprite>("Face1");
+        face = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        faceSprites = Resources.LoadAll<Sprite>("Images/Face1");
+
+        touchEnemy = Resources.Load<GameObject>("Prefab/touchenemy");
     }
 
     void Update(){
@@ -32,8 +35,9 @@ public class ShooterEnemy : BaseEnemy{
     }
     void Shoot(){
         if(spanwTime <= 0){
-            Debug.Log("Shoot little touch enemys");
-            spanwTime = 1f;
+            GameObject te = Instantiate(touchEnemy);
+            te.transform.position = transform.position;
+            spanwTime = 2.5f;
         }
         else
             spanwTime -= Time.deltaTime;

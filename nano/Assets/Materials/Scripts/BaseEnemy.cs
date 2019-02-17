@@ -28,7 +28,7 @@ public class BaseEnemy : MonoBehaviour{
     }
 
     void GotHit(){
-        hitTimer = 1f;
+        hitTimer = 0.5f;
     }
 
     public void CheckSpriteFace(){
