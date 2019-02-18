@@ -8,6 +8,7 @@ public class Parallax : MonoBehaviour{
 
     void Start(){
         speedV = new Vector3(0, speed, 0);
+        //0.9234
     }
 
     void Update(){
