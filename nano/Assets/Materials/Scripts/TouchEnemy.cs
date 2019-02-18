@@ -21,10 +21,14 @@ public class TouchEnemy : BaseEnemy{
     }
     void Move(){
         Vector3 direction = (player.transform.position - transform.position).normalized;
-        if(direction.x > direction.y)
+        /*if(direction.x > direction.y)
             direction.x *= 2;
         else
             direction.y *= 2;
+        */
+        direction.x *= 0.5f;
+        direction.y *= 1.8f;
+
         transform.position += ((Vector3)CameraMoviment.Speed + (direction * speed)) * Time.deltaTime;
     }
 }
