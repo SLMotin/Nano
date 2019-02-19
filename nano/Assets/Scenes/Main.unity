@@ -16493,7 +16493,7 @@ GameObject:
   - component: {fileID: 1857795048}
   - component: {fileID: 1857795049}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: "teste de anima\xE7\xF5es"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
