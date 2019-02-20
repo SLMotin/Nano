@@ -17,10 +17,15 @@ public class ShooterEnemy : BaseEnemy{
         ).normalized;
         life = 30f;
 
-        face = transform.GetChild(0).GetComponent<SpriteRenderer>();
-        faceSprites = Resources.LoadAll<Sprite>("Images/Face1");
+        /*face = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        faceSprites = Resources.LoadAll<Sprite>("Images/Face1");*/
 
-        touchEnemy = Resources.Load<GameObject>("Prefab/touchenemy");
+        touchEnemy = Resources.Load<GameObject>("Prefab/virusTouchAtk");
+
+        animation = GetComponent<Animator>();
+        //animation.SetTrigger(true);
+        //animation.SetInteger("sentiuDor", 2);
+        //animation.SetFloat("sentiuDor", 2.1f);
     }
 
     void Update(){

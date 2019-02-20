@@ -10,8 +10,8 @@ public class TouchEnemy : BaseEnemy{
         player = GameObject.FindGameObjectWithTag("Player");
         life = 3f;
 
-        face = transform.GetChild(0).GetComponent<SpriteRenderer>();
-        faceSprites = Resources.LoadAll<Sprite>("Images/Face1");
+        //face = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        //faceSprites = Resources.LoadAll<Sprite>("Images/Face1");
     }
 
     void Update(){

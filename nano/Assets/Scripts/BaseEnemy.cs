@@ -6,10 +6,11 @@ public class BaseEnemy : MonoBehaviour{
 
     public float life = 1f;
     float repelForce = 0.5f;
-    public SpriteRenderer face;
-    public Sprite[] faceSprites;
+    //public SpriteRenderer face;
+    //public Sprite[] faceSprites;
     public bool gotHit = false;
     private float hitTimer = 0f;
+    public Animator animation;
 
     protected bool CanMove(){
         if(CameraMoviment.YCameraValue >= transform.position.y)
@@ -33,11 +34,11 @@ public class BaseEnemy : MonoBehaviour{
 
     public void CheckSpriteFace(){
         if(hitTimer <= 0 && gotHit){
-            face.sprite = faceSprites[0];
+            animation.SetBool("inPain", false);
             gotHit = false;
         }
         else if(hitTimer > 0 && !gotHit){
-            face.sprite = faceSprites[1];
+            animation.SetBool("inPain", true);
             gotHit = true;
         }
         if(hitTimer > 0)
