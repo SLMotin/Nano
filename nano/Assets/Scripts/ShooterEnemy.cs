@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class ShooterEnemy : BaseEnemy{
     GameObject player;
-    float speed = 0.8f;
+    float speed = 0.9f;
     float spanwTime = 2.5f;
     Vector3 direction;
     GameObject touchEnemy;
-    void Start(){
+    new void Start(){
+        base.Start();
         player = GameObject.FindGameObjectWithTag("Player");
-        direction = new Vector3(
-            Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2, 0, 0)).x - transform.position.x,
-            0,
-            0
-        ).normalized;
         life = 30f;
 
         /*face = transform.GetChild(0).GetComponent<SpriteRenderer>();
@@ -22,13 +18,20 @@ public class ShooterEnemy : BaseEnemy{
 
         touchEnemy = Resources.Load<GameObject>("Prefab/virusTouchAtk");
 
+        direction = new Vector3(
+            Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2, 0, 0)).x - transform.position.x,
+            0,
+            0
+        ).normalized;
+
         animation = GetComponent<Animator>();
         //animation.SetTrigger(true);
         //animation.SetInteger("sentiuDor", 2);
         //animation.SetFloat("sentiuDor", 2.1f);
     }
 
-    void Update(){
+    new void Update(){
+        base.Update();
         if(CanMove())
             Move();
         if(CanShoot())
@@ -36,13 +39,13 @@ public class ShooterEnemy : BaseEnemy{
         CheckSpriteFace();
     }
     void Move(){
-        transform.position += ((Vector3)CameraMoviment.Speed + direction) * speed * Time.deltaTime;
+        transform.position += ((Vector3)CameraMoviment.Speed * speed  + direction * 0.2f) * Time.deltaTime;
     }
     void Shoot(){
         if(spanwTime <= 0){
             GameObject te = Instantiate(touchEnemy);
             te.transform.position = transform.position;
-            spanwTime = 2.5f;
+            spanwTime = 1.5f;
         }
         else
             spanwTime -= Time.deltaTime;

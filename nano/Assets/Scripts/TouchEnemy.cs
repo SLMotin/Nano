@@ -6,7 +6,8 @@ public class TouchEnemy : BaseEnemy{
     GameObject player;
     float speed = 0.8f;
 
-    void Start(){
+    new void Start(){
+        base.Start();
         player = GameObject.FindGameObjectWithTag("Player");
         life = 3f;
 
@@ -15,7 +16,8 @@ public class TouchEnemy : BaseEnemy{
         animation = GetComponent<Animator>();
     }
 
-    void Update(){
+    new void Update(){
+        base.Update();
         if(CanMove())
             Move();
         CheckSpriteFace();
