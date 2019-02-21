@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour {
 			shootTime = 0.1f;
 			GameObject ob = Instantiate(BulletPrefab);
 			ob.transform.position = rb.position;
+			ob.transform.position += new Vector3(0f, 0f, 0.1f);
 		}
 	}
 }
