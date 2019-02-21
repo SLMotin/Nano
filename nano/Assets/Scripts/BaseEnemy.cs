@@ -13,6 +13,10 @@ public class BaseEnemy : MonoBehaviour{
     public Animator animation;
 
     public void Start(){
+        animation = transform.GetChild(0).gameObject.GetComponent<Animator>();
+        //animation.SetTrigger(true);
+        //animation.SetInteger("sentiuDor", 2);
+        //animation.SetFloat("sentiuDor", 2.1f);
 
     }
     public void Update(){
@@ -58,8 +62,13 @@ public class BaseEnemy : MonoBehaviour{
             GotHit();
         }
         else if(col.tag == "Enemy"){
-            Vector3 direction = transform.position - col.transform.position;
-            transform.position += direction * repelForce * Time.deltaTime;
+            float repelDistance = 0f;
+            if(((CircleCollider2D)col).radius != null)
+                repelDistance += ((CircleCollider2D)col).radius/2;
+            repelDistance += gameObject.GetComponent<CircleCollider2D>().radius/2;
+
+            Vector3 direction = (transform.position - col.transform.position).normalized;
+            transform.position += direction * repelDistance * Time.deltaTime;
         }
         if(life <= 0)
             Destroy(gameObject);

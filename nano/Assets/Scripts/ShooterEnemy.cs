@@ -16,18 +16,13 @@ public class ShooterEnemy : BaseEnemy{
         /*face = transform.GetChild(0).GetComponent<SpriteRenderer>();
         faceSprites = Resources.LoadAll<Sprite>("Images/Face1");*/
 
-        touchEnemy = Resources.Load<GameObject>("Prefab/virusTouchAtk");
+        touchEnemy = Resources.Load<GameObject>("Prefab/virusP");
 
         direction = new Vector3(
             Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2, 0, 0)).x - transform.position.x,
             0,
             0
         ).normalized;
-
-        animation = GetComponent<Animator>();
-        //animation.SetTrigger(true);
-        //animation.SetInteger("sentiuDor", 2);
-        //animation.SetFloat("sentiuDor", 2.1f);
     }
 
     new void Update(){
@@ -45,6 +40,7 @@ public class ShooterEnemy : BaseEnemy{
         if(spanwTime <= 0){
             GameObject te = Instantiate(touchEnemy);
             te.transform.position = transform.position;
+
             spanwTime = 1.5f;
         }
         else
