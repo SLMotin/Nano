@@ -12,6 +12,7 @@ public class TouchEnemy : BaseEnemy{
 
         //face = transform.GetChild(0).GetComponent<SpriteRenderer>();
         //faceSprites = Resources.LoadAll<Sprite>("Images/Face1");
+        animation = GetComponent<Animator>();
     }
 
     void Update(){
