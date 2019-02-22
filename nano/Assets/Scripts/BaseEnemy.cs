@@ -60,10 +60,8 @@ public class BaseEnemy : MonoBehaviour{
         }
         else if(col.tag == "Enemy"){
             float repelDistance = 0f;
-            if(((CircleCollider2D)col).radius != null){
-                if(((CircleCollider2D)col).radius >= gameObject.GetComponent<CircleCollider2D>().radius)
-                    repelDistance += gameObject.GetComponent<CircleCollider2D>().radius/10;
-            }
+            if(((CircleCollider2D)col).radius >= gameObject.GetComponent<CircleCollider2D>().radius)
+                repelDistance += gameObject.GetComponent<CircleCollider2D>().radius/10;
 
             Vector3 ndirection = (transform.position - col.transform.position).normalized;
             transform.position += ndirection * repelDistance;
