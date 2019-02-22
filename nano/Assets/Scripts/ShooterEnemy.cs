@@ -13,9 +13,6 @@ public class ShooterEnemy : BaseEnemy{
         player = GameObject.FindGameObjectWithTag("Player");
         life = 30f;
 
-        /*face = transform.GetChild(0).GetComponent<SpriteRenderer>();
-        faceSprites = Resources.LoadAll<Sprite>("Images/Face1");*/
-
         touchEnemy = Resources.Load<GameObject>("Prefab/virusP");
 
         direction = new Vector3(

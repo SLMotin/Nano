@@ -14,10 +14,8 @@ public class BaseEnemy : MonoBehaviour{
 
     public void Start(){
         animation = transform.GetChild(0).gameObject.GetComponent<Animator>();
-        //animation.SetTrigger(true);
-        //animation.SetInteger("sentiuDor", 2);
-        //animation.SetFloat("sentiuDor", 2.1f);
-
+        //face = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        //faceSprites = Resources.LoadAll<Sprite>("Images/Face1");
     }
     public void Update(){
 
