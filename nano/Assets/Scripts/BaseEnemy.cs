@@ -5,7 +5,6 @@ using UnityEngine;
 public class BaseEnemy : MonoBehaviour{
 
     public float life = 1f;
-    public float repelForce = 0.5f;
     //public SpriteRenderer face;
     //public Sprite[] faceSprites;
     public bool gotHit = false;
@@ -61,12 +60,13 @@ public class BaseEnemy : MonoBehaviour{
         }
         else if(col.tag == "Enemy"){
             float repelDistance = 0f;
-            if(((CircleCollider2D)col).radius != null)
-                repelDistance += ((CircleCollider2D)col).radius/2;
-            repelDistance += gameObject.GetComponent<CircleCollider2D>().radius/2;
+            if(((CircleCollider2D)col).radius != null){
+                if(((CircleCollider2D)col).radius >= gameObject.GetComponent<CircleCollider2D>().radius)
+                    repelDistance += gameObject.GetComponent<CircleCollider2D>().radius/10;
+            }
 
-            Vector3 direction = (transform.position - col.transform.position).normalized;
-            transform.position += direction * repelDistance * Time.deltaTime;
+            Vector3 ndirection = (transform.position - col.transform.position).normalized;
+            transform.position += ndirection * repelDistance;
         }
         if(life <= 0)
             Destroy(gameObject);

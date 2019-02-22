@@ -12,7 +12,6 @@ public class fireAnimation : MonoBehaviour{
     void Start(){
         defaultPosition = transform.localPosition;
         defaultScale = transform.localScale;
-        Debug.Log(defaultScale.y);
     }
 
     void Update(){

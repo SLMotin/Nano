@@ -9,8 +9,8 @@ public class Render : MonoBehaviour{
     }
 
     void Update(){
-        Vector2 botLeftCamera = Camera.main.ScreenToWorldPoint(new Vector3(-Screen.width/10f, -Screen.height/10f, 0));
-        Vector2 topRightCamera = Camera.main.ScreenToWorldPoint(new Vector3(11f*Screen.width/10, 11f*Screen.height/10, 0));
+        Vector2 botLeftCamera = Camera.main.ScreenToWorldPoint(new Vector3(-Screen.width/2f, -Screen.height/5f, 0));
+        Vector2 topRightCamera = Camera.main.ScreenToWorldPoint(new Vector3(1.5f*Screen.width, 1.2f*Screen.height, 0));
 
         if(transform.position.x > botLeftCamera.x && transform.position.x < topRightCamera.x && transform.position.y > botLeftCamera.y && transform.position.y < topRightCamera.y)
             graph.SetActive(true);
