@@ -31,9 +31,9 @@ public class PlayerController : MonoBehaviour {
 	}
 	void UpdateAxis(){
 		Vector2 direction;
-		Touch touch = Input.GetTouch(0);
+        Touch touch;
 		if(Input.touchCount > 0){
-			touch = Input.GetTouch(0);
+            touch = Input.GetTouch(0);
 			/*if(touch.phase == TouchPhase.Began){
 				inTouch = true;
 				controlTouchOrigin = touch.position;
@@ -71,7 +71,10 @@ public class PlayerController : MonoBehaviour {
 			VesticalAxis /= 2;
 		}*/
 		if(inTouch){
-			rb.position += Camera.main.ScreenToWorldPoint(touch.deltaPosition);
+            touch = Input.GetTouch(0);
+            Vector2 x = Camera.main.ScreenToWorldPoint(touch.deltaPosition);
+
+            rb.position += x;
 			HorizontalAxis = 0;
 			VesticalAxis = 0;
 		}
