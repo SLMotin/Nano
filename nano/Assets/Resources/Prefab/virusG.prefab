@@ -1,13 +1,13 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!95 &2222463739221339073
+--- !u!95 &7911919714968075579
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2979918787822958864}
+  m_GameObject: {fileID: 1070362663670454678}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c6577f5819e42441da3c5e47ae3273a7, type: 2}
@@ -50,7 +50,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2979918787823052080}
+  - {fileID: 1070362663670547894}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -104,7 +104,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 1
-  repelForce: 0.5
   gotHit: 0
   animation: {fileID: 0}
 --- !u!114 &4353378494794937679
@@ -119,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30436e3a19d0e45c2b4c5b43ed4cadfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &2979918787822927792
+--- !u!1001 &1070362663670423350
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -128,7 +127,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
       propertyPath: m_Name
-      value: virus
+      value: virus (1)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -176,27 +175,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.29186115
+      value: 0.2987267
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.29186115
+      value: 0.2987267
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.29186115
+      value: 0.2987267
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
---- !u!1 &2979918787822958864 stripped
+--- !u!1 &1070362663670454678 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 1548ae64cecd14d25974f4257f298bb3,
     type: 3}
-  m_PrefabInstance: {fileID: 2979918787822927792}
+  m_PrefabInstance: {fileID: 1070362663670423350}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2979918787823052080 stripped
+--- !u!4 &1070362663670547894 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 1548ae64cecd14d25974f4257f298bb3,
     type: 3}
-  m_PrefabInstance: {fileID: 2979918787822927792}
+  m_PrefabInstance: {fileID: 1070362663670423350}
   m_PrefabAsset: {fileID: 0}
