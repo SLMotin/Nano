@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
 	float HorizontalAxis, VesticalAxis;
 
 	bool inTouch = false;
-	Vector2 controlTouchOrigin;
+	Vector2 lastPosition;
 
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
@@ -30,53 +30,26 @@ public class PlayerController : MonoBehaviour {
 		UpdatePosition();
 	}
 	void UpdateAxis(){
-		Vector2 direction;
         Touch touch;
 		if(Input.touchCount > 0){
             touch = Input.GetTouch(0);
-			/*if(touch.phase == TouchPhase.Began){
+			if(touch.phase == TouchPhase.Began)
+				lastPosition = touch.position;
+			else if(touch.phase == TouchPhase.Moved)
 				inTouch = true;
-				controlTouchOrigin = touch.position;
-				direction = touch.position - controlTouchOrigin;
-			}
-			else if(touch.phase == TouchPhase.Moved){
-				direction = touch.position - controlTouchOrigin;
-			}
-			else if(touch.phase == TouchPhase.Ended)
-				inTouch = false;
-			*/
-			if(touch.phase == TouchPhase.Moved)
-				inTouch = true;
-			else if(touch.phase == TouchPhase.Ended)
+			else//if(touch.phase == TouchPhase.Ended)
 				inTouch = false;
 		}
+		else
+			inTouch = false;
 
-		/*if(inTouch){
-			if(touch.position.x - controlTouchOrigin.x >= 0.5f || touch.position.x - controlTouchOrigin.x <= -0.5f)
-				HorizontalAxis = touch.position.x - controlTouchOrigin.x;
-			if(touch.position.y - controlTouchOrigin.y >= 0.5f || touch.position.y - controlTouchOrigin.y <= -0.5f)
-				VesticalAxis = touch.position.y - controlTouchOrigin.y;
-			
-			if(HorizontalAxis > 1f)
-				HorizontalAxis = 1f;
-			if(HorizontalAxis < -1f)
-				HorizontalAxis = -1f;
-			
-			if(VesticalAxis > 1f)
-				VesticalAxis = 1f;
-			if(VesticalAxis < -1f)
-				VesticalAxis = -1f;
-
-			HorizontalAxis /= 2;
-			VesticalAxis /= 2;
-		}*/
 		if(inTouch){
             touch = Input.GetTouch(0);
-            Vector2 x = Camera.main.ScreenToWorldPoint(touch.deltaPosition);
-
-            rb.position += x;
-			HorizontalAxis = 0;
-			VesticalAxis = 0;
+			Vector2 posicaoAtual = Camera.main.ScreenToWorldPoint(touch.position);
+            Vector2 deltaPosition = posicaoAtual - lastPosition;
+			lastPosition = posicaoAtual;
+            rb.position += deltaPosition;
+			HorizontalAxis = VesticalAxis = 0;
 		}
 		else{
 			HorizontalAxis = Input.GetAxis("Horizontal");
