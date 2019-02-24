@@ -34,10 +34,8 @@ public class PlayerController : MonoBehaviour {
         Touch touch;
 		if(Input.touchCount > 0){
             touch = Input.GetTouch(0);
-			if(touch.phase == TouchPhase.Began){
+			if(touch.phase == TouchPhase.Began)
 				lastPosition = Camera.main.ScreenToWorldPoint(touch.position);
-				lastYCameraValue = CameraMoviment.YCameraValue;
-			}
 			else if(touch.phase == TouchPhase.Moved)
 				inTouch = true;
 			else//if(touch.phase == TouchPhase.Ended)
@@ -52,7 +50,6 @@ public class PlayerController : MonoBehaviour {
             Vector2 deltaPosition = posicaoAtual - lastPosition;
 			deltaPosition.y -= CameraMoviment.YCameraValue - lastYCameraValue;
 			lastPosition = posicaoAtual;
-			lastYCameraValue = CameraMoviment.YCameraValue;
             rb.position += deltaPosition;
 			HorizontalAxis = VesticalAxis = 0;
 		}
@@ -72,7 +69,7 @@ public class PlayerController : MonoBehaviour {
 			VesticalAxis * speed * Time.deltaTime
 		);
 		//camera follow
-        rb.position += CameraMoviment.Speed * Time.deltaTime;
+        rb.position += new Vector2(0f, CameraMoviment.YCameraValue - lastYCameraValue);
 
 		//fix position
 		Vector2 fixedPosition = new Vector2(rb.position.x, rb.position.y);
@@ -86,6 +83,7 @@ public class PlayerController : MonoBehaviour {
 			fixedPosition.y = cornerLeftBot.y + shipSize.y;
 		
 		rb.position = fixedPosition;
+		lastYCameraValue = CameraMoviment.YCameraValue;
 	}
 
 	void Shoot(){
