@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour {
 		if(Input.touchCount > 0){
             touch = Input.GetTouch(0);
 			if(touch.phase == TouchPhase.Began)
-				lastPosition = touch.position;
+				lastPosition = Camera.main.ScreenToWorldPoint(touch.position);
 			else if(touch.phase == TouchPhase.Moved)
 				inTouch = true;
 			else//if(touch.phase == TouchPhase.Ended)
