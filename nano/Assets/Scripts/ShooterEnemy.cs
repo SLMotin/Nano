@@ -11,7 +11,7 @@ public class ShooterEnemy : BaseEnemy{
     new void Start(){
         base.Start();
         player = GameObject.FindGameObjectWithTag("Player");
-        life = 30f;
+        life = 80f;
 
         touchEnemy = Resources.Load<GameObject>("Prefab/virusP");
 
