@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour {
 
 	bool inTouch = false;
 	Vector2 lastPosition;
+	float lastYCameraValue;
 
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
@@ -33,8 +34,10 @@ public class PlayerController : MonoBehaviour {
         Touch touch;
 		if(Input.touchCount > 0){
             touch = Input.GetTouch(0);
-			if(touch.phase == TouchPhase.Began)
+			if(touch.phase == TouchPhase.Began){
 				lastPosition = Camera.main.ScreenToWorldPoint(touch.position);
+				lastYCameraValue = CameraMoviment.YCameraValue;
+			}
 			else if(touch.phase == TouchPhase.Moved)
 				inTouch = true;
 			else//if(touch.phase == TouchPhase.Ended)
@@ -47,7 +50,9 @@ public class PlayerController : MonoBehaviour {
             touch = Input.GetTouch(0);
 			Vector2 posicaoAtual = Camera.main.ScreenToWorldPoint(touch.position);
             Vector2 deltaPosition = posicaoAtual - lastPosition;
+			deltaPosition.y -= CameraMoviment.YCameraValue - lastYCameraValue;
 			lastPosition = posicaoAtual;
+			lastYCameraValue = CameraMoviment.YCameraValue;
             rb.position += deltaPosition;
 			HorizontalAxis = VesticalAxis = 0;
 		}
