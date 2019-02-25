@@ -149,7 +149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 1
-  repelForce: 0.5
   gotHit: 0
   animation: {fileID: 0}
 --- !u!1 &4172970447183750378

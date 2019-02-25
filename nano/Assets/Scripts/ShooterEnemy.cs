@@ -7,13 +7,14 @@ public class ShooterEnemy : BaseEnemy{
     float speed = 0.9f;
     float spanwTime = 2.5f;
     Vector3 direction;
-    GameObject touchEnemy;
+    GameObject touchEnemy, virusM;
     new void Start(){
         base.Start();
         player = GameObject.FindGameObjectWithTag("Player");
         life = 80f;
 
         touchEnemy = Resources.Load<GameObject>("Prefab/virusP");
+        virusM = Resources.Load<GameObject>("Prefab/virusM");
 
         direction = new Vector3(
             Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2, 0, 0)).x - transform.position.x,
@@ -42,5 +43,12 @@ public class ShooterEnemy : BaseEnemy{
         }
         else
             spanwTime -= Time.deltaTime;
+    }
+    public override void Defeated(){
+        GameObject virus = Instantiate(virusM);
+        float radius = gameObject.GetComponent<CircleCollider2D>().radius;
+        virus.transform.position = new Vector2(transform.position.x + radius/2, transform.position.y);
+        virus = Instantiate(virusM);
+        virus.transform.position = new Vector2(transform.position.x - radius/2, transform.position.y);
     }
 }

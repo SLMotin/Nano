@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class fireAnimation : MonoBehaviour{
+public class FireAnimation : MonoBehaviour{
     Vector3 defaultPosition;
     Vector3 defaultScale;
 
@@ -18,16 +18,10 @@ public class fireAnimation : MonoBehaviour{
         if(Input.GetAxis("Vertical") != 0f && yScale < 0.2f && yScale > -0.2f)
             yScale += maxSize * Input.GetAxis("Vertical") * Time.deltaTime;
         else{
-            if(yScale > 0f){
-                yScale -= maxSize * Time.deltaTime;
-                if(yScale < 0f)
-                    yScale = 0f;
-            }
-            else{
-                yScale += maxSize * Time.deltaTime;
-                if(yScale > 0f)
-                    yScale = 0f;
-            }
+            int sinal = yScale > 0f ? -1 : 1;
+            yScale += maxSize * Time.deltaTime * sinal;
+            if(sinal < 0f && yScale < 0f || sinal > 0f && yScale > 0f)
+                yScale = 0f;
         }
 
         transform.localScale = new Vector3(

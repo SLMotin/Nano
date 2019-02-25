@@ -21,8 +21,10 @@ public class BaseEnemy : MonoBehaviour{
     }
 
     public bool CanMove(){
-        if(CameraMoviment.YCameraValue >= transform.position.y)
+        if(CameraMoviment.YCameraValue >= transform.position.y){
+            transform.parent = null;
             return true;
+        }
         else
             return false;
     }
@@ -66,7 +68,10 @@ public class BaseEnemy : MonoBehaviour{
             Vector3 ndirection = (transform.position - col.transform.position).normalized;
             transform.position += ndirection * repelDistance;
         }
-        if(life <= 0)
+        if(life <= 0){
+            Defeated();
             Destroy(gameObject);
+        }
     }
+    public virtual void Defeated(){}
 }

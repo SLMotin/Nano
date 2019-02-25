@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour {
 		shipSize = GetComponent<BoxCollider2D>().size / 2f;
 	}
 	
-	void Update () {
+	void LateUpdate() {
 		UpdateAxis();
 
 		Shoot();
@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour {
 			VesticalAxis * speed * Time.deltaTime
 		);
 		//camera follow
-        rb.position += new Vector2(0f, CameraMoviment.YCameraValue - lastYCameraValue);
+        rb.position += new Vector2(0f, CameraMoviment.deltaYCameraValue);
 
 		//fix position
 		Vector2 fixedPosition = new Vector2(rb.position.x, rb.position.y);
