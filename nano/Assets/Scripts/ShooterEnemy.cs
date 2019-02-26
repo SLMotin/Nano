@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ShooterEnemy : BaseEnemy{
-    GameObject player;
     float speed = 0.9f;
     float spanwTime = 2.5f;
     Vector3 direction;
     GameObject touchEnemy, virusM;
     new void Start(){
         base.Start();
-        player = GameObject.FindGameObjectWithTag("Player");
         life = 80f;
 
         touchEnemy = Resources.Load<GameObject>("Prefab/virusP");

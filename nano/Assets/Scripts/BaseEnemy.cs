@@ -9,10 +9,10 @@ public class BaseEnemy : MonoBehaviour{
     //public Sprite[] faceSprites;
     public bool gotHit = false;
     private float hitTimer = 0f;
-    public Animator animation;
+    public Animator animationInPain;
 
     public void Start(){
-        animation = transform.GetChild(0).gameObject.GetComponent<Animator>();
+        animationInPain = transform.GetChild(0).gameObject.GetComponent<Animator>();
         //face = transform.GetChild(0).GetComponent<SpriteRenderer>();
         //faceSprites = Resources.LoadAll<Sprite>("Images/Face1");
     }
@@ -44,11 +44,11 @@ public class BaseEnemy : MonoBehaviour{
 
     public void CheckSpriteFace(){
         if(hitTimer <= 0 && gotHit){
-            animation.SetBool("inPain", false);
+            animationInPain.SetBool("inPain", false);
             gotHit = false;
         }
         else if(hitTimer > 0 && !gotHit){
-            animation.SetBool("inPain", true);
+            animationInPain.SetBool("inPain", true);
             gotHit = true;
         }
         if(hitTimer > 0)
