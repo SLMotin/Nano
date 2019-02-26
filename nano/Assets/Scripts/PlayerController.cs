@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour {
 
 	bool inTouch = false;
 	Vector2 lastPosition;
-	float lastYCameraValue, lastYCameraValueTouch;
+	float lastYCameraValueTouch;
 
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
@@ -86,7 +86,6 @@ public class PlayerController : MonoBehaviour {
 			fixedPosition.y = cornerLeftBot.y + shipSize.y;
 		
 		rb.position = fixedPosition;
-		lastYCameraValue = CameraMoviment.YCameraValue;
 	}
 
 	void Shoot(){
