@@ -33,7 +33,7 @@ GameObject:
   - component: {fileID: 6008984839824483990}
   - component: {fileID: 7725154348031946084}
   m_Layer: 0
-  m_Name: virusG 1
+  m_Name: virusM
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 1
   gotHit: 0
-  animation: {fileID: 0}
+  animationInPain: {fileID: 0}
 --- !u!114 &7725154348031946084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6963664649455157617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30436e3a19d0e45c2b4c5b43ed4cadfe, type: 3}
+  m_Script: {fileID: 11500000, guid: 7024740106d2d48698494641ec03b3a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &740456886813512974
