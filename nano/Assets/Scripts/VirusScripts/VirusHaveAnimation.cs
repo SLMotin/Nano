@@ -15,6 +15,9 @@ public class VirusHaveAnimation : MonoBehaviour, IHaveAnimation{
         PlayAnimation();
     }
     public void PlayAnimation(){
+        PainAnimation();
+    }
+    public void PainAnimation(){
         if(hitTimer <= 0 && gotHit){
             animator.SetBool("inPain", false);
             gotHit = false;
