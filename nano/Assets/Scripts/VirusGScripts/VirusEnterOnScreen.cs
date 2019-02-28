@@ -21,5 +21,6 @@ public class VirusEnterOnScreen : MonoBehaviour, IEnterOnScreen{
     }
     public void EndedEnterOnScreenAnimation(){
         HasEndedEnterOnScreen = true;
+        animator.enabled = false;
     }
 }

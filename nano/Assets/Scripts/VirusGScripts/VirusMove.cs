@@ -9,7 +9,7 @@ public class VirusMove : MonoBehaviour, IMove{
         CanMove = GetComponent<VirusCanMove>();
         DetachFromTrack = GetComponent<VirusDetachFromTrack>();
         EnterOnScreen = GetComponent<VirusEnterOnScreen>();
-        speed = 20f;
+        speed = 0.2f;
         direction = new Vector3(
             Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2, 0, 0)).x - transform.position.x,
             0,
@@ -23,9 +23,7 @@ public class VirusMove : MonoBehaviour, IMove{
         Move();
     }
     public void Move(){
-        if(CanMove.CanMove()){
-            print(transform.position + " " + (direction * (speed * Time.deltaTime)));
-            transform.position = transform.position + (direction * (speed * Time.deltaTime));
-        }
+        if(CanMove.CanMove())
+            gameObject.transform.position += direction * speed * Time.deltaTime;
     }
 }
