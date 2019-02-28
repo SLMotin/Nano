@@ -24,6 +24,6 @@ public class VirusMove : MonoBehaviour, IMove{
     }
     public void Move(){
         if(CanMove.CanMove())
-            gameObject.transform.position += direction * speed * Time.deltaTime;
+            transform.position += direction * speed * Time.deltaTime;
     }
 }
