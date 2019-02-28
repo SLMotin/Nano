@@ -1,7 +1,14 @@
 using UnityEngine;
 public class VirusShoot : MonoBehaviour, IShoot{
     public GameObject projectilePrefab;
-    public GameObject ProjectilePrefab { get{return projectilePrefab;} set{projectilePrefab = value;} }
+    public GameObject ProjectilePrefab {
+        get{
+            return projectilePrefab;
+        }
+        set{
+            projectilePrefab = value;
+        }
+    }
     private float maxSpanwTime = 1.5f;
     private float spanwTime = 1.5f;
 
