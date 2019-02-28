@@ -10,6 +10,7 @@ public class VirusLife : MonoBehaviour, IHaveLife{
     public void OnTriggerEnter2D(Collider2D col){
         if(col.tag == "NormalBullet"){
             Life -= 1;
+            print(Life);
             OnGotHit();
         }
         else if(col.tag == "Enemy"){
