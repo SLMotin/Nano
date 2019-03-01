@@ -71,8 +71,6 @@ public class PlayerController : MonoBehaviour {
 			HorizontalAxis * speed * Time.deltaTime,
 			VesticalAxis * speed * Time.deltaTime
 		);
-		//camera follow
-        rb.position += new Vector2(0f, CameraMoviment.deltaYCameraValue);
 
 		//fix position
 		Vector2 fixedPosition = new Vector2(rb.position.x, rb.position.y);
