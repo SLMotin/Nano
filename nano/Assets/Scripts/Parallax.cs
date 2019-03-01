@@ -6,7 +6,7 @@ public class Parallax : MonoBehaviour{
     public float speed;
     private Vector3 speedV;
 
-    void Start(){
+    void Awake(){
         speedV = new Vector3(0, speed, 0);
     }
 
