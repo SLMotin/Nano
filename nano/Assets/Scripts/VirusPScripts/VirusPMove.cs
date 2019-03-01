@@ -24,7 +24,7 @@ public class VirusPMove : MonoBehaviour, IMove{
             direction.x *= 0.5f;
             direction.y *= 1.8f;
 
-            transform.position += ((Vector3)CameraMoviment.Speed + (direction * speed)) * Time.deltaTime;
+            transform.position += direction * speed * Time.deltaTime;
         }
     }
 }

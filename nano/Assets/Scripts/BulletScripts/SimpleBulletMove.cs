@@ -1,0 +1,23 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SimpleBulletMove : MonoBehaviour, IMove {
+	Rigidbody2D rb;
+	public ICanMove CanMove { get; set; }
+	void Awake () {
+		rb = GetComponent<Rigidbody2D>();
+	}
+	void Update () {
+		Move();
+	}
+	public void Move(){
+		rb.position += new Vector2(0f, 10f * Time.deltaTime);
+		if(rb.position.y > Camera.main.ScreenToWorldPoint(new Vector2(0f, Screen.height)).y)
+            Destroy(gameObject);
+	}
+	void OnTriggerEnter2D(Collider2D col){
+        if(col.tag == "Enemy")
+            Destroy(gameObject);
+	}
+}

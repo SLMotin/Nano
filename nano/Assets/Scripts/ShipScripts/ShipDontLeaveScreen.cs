@@ -12,6 +12,10 @@ public class ShipDontLeaveScreen : MonoBehaviour, IDontLeaveScreen{
         rb = GetComponent<Rigidbody2D>();
 		shipSize = GetComponent<BoxCollider2D>().size / 2f;
     }
+
+    void Update(){
+        StayOnScreen();
+    }
     public void StayOnScreen(){
 		Vector2 fixedPosition = new Vector2(rb.position.x, rb.position.y);
 		if(rb.position.x > cornerTopRight.x - shipSize.x)
