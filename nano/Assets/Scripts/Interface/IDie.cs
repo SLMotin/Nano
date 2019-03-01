@@ -1,4 +1,4 @@
 public interface IDie{
-    IHaveLife VirusLife { get; set; }
+    IHaveLife HaveLife { get; set; }
     void Die();
 }

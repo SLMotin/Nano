@@ -9,7 +9,7 @@ public class VirusEnterOnScreen : MonoBehaviour, IEnterOnScreen{
     Animator animator;
     public int EnterScreenAnimationNumber;
     void Awake(){
-        CanEnterOnScreen = GetComponent<VirusCanEnterOnScreen>();
+        CanEnterOnScreen = GetComponent<ICanEnterOnScreen>();
         animator = GetComponent<Animator>();
         HasEndedEnterOnScreen = false;
         HasStartedAnimation = false;

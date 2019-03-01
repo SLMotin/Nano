@@ -5,7 +5,7 @@ public class VirusDetachFromTrack : MonoBehaviour, IDetachFromTrack{
     public bool HasDetached { get; set; }
 
     void Awake(){
-        CanDetach = GetComponent<VirusCanDetachFromTrack>();
+        CanDetach = GetComponent<ICanDetachFromTrack>();
         HasDetached = false;
     }
 

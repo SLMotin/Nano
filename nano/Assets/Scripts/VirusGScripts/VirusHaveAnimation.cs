@@ -1,12 +1,12 @@
 using UnityEngine;
 public class VirusHaveAnimation : MonoBehaviour, IHaveAnimation{
     public Animator animator { get; set; }
-    public VirusLife HitTrigger;
+    public IHaveLife HitTrigger;
     float hitTimer;
     bool gotHit;
     void Awake(){
         animator = transform.GetChild(0).gameObject.GetComponent<Animator>();
-        HitTrigger = GetComponent<VirusLife>();
+        HitTrigger = GetComponent<IHaveLife>();
         HitTrigger.OnGotHit += GotHit;
         hitTimer = 0f;
         gotHit = false;
