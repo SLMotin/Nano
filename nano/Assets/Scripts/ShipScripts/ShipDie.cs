@@ -7,6 +7,6 @@ public class ShipDie : MonoBehaviour, IDie{
         HaveLife.OnDied += Die;
     }
     public void Die(){
-		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		  SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
