@@ -6,6 +6,9 @@ using UnityEngine;
 public class GameBtns : MonoBehaviour{
     public event Action OnChangeAmmo = delegate{};
     public event Action OnPause = delegate{};
+    void Awake(){
+        
+    }
     public void ChangeAmmo(){
         OnChangeAmmo();
     }
