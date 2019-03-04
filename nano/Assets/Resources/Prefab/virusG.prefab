@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fb352d9a2d4c48968eb3016e9451720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnterScreenAnimationNumber: 0
 --- !u!114 &5625688079911507560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43574d8365755444be91cffc7bbf7e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitTrigger: {fileID: 0}
 --- !u!114 &1804734409247684941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +229,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5478733829229692753}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
+      propertyPath: m_Name
+      value: virus (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -285,9 +289,9 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.2987267
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
-      propertyPath: m_Name
-      value: virus (1)
+    - target: {fileID: 21200012, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
