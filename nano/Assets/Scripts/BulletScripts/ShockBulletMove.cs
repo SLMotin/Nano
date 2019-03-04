@@ -15,11 +15,7 @@ public class ShockBulletMove : MonoBehaviour, IMove {
 	public void Move(){
         rb.position += (Vector2)transform.up * speed * Time.deltaTime;
         rb.position += new Vector2(Random.Range(-0.1f, 0.1f), 0f);
-        if(rb.position.y > Camera.main.ScreenToWorldPoint(new Vector2(0f, Screen.height)).y)
-            Destroy(gameObject);
-	}
-	void OnTriggerEnter2D(Collider2D col){
-        if(col.tag == "Enemy")
+        if(rb.position.y > Camera.main.ScreenToWorldPoint(new Vector2(0f, Screen.height*1.3f)).y)
             Destroy(gameObject);
 	}
 }
