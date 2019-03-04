@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 6300770574133471806}
   - component: {fileID: 3471532265908540163}
   - component: {fileID: 4486606655189993815}
+  - component: {fileID: 3670559102129687954}
   m_Layer: 0
   m_Name: virusP
   m_TagString: Enemy
@@ -190,7 +191,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43574d8365755444be91cffc7bbf7e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitTrigger: {fileID: 0}
 --- !u!114 &6300770574133471806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +225,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a14747d9092247dab7bf4c096e83362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3670559102129687954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112211991956793845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c58a95cb5258f4fa3bc5178efb2436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4172970447183750378
