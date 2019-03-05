@@ -18,8 +18,10 @@ public class VirusMove : MonoBehaviour, IMove{
     }
 
     void Update(){
-        DetachFromTrack.DetachFromTrack();
-        EnterOnScreen.EnterOnScreen();
+        if(DetachFromTrack != null)
+            DetachFromTrack.DetachFromTrack();
+        if(EnterOnScreen != null)
+            EnterOnScreen.EnterOnScreen();
         Move();
     }
     public void Move(){
