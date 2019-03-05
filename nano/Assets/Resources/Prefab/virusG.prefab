@@ -41,7 +41,6 @@ GameObject:
   - component: {fileID: 8989807853764205178}
   - component: {fileID: 3372575893263791341}
   - component: {fileID: 2830525267914140061}
-  - component: {fileID: 2840252818569931646}
   m_Layer: 0
   m_Name: virusG
   m_TagString: Enemy
@@ -236,25 +235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3c58a95cb5258f4fa3bc5178efb2436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &2840252818569931646
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5905678130460001387}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 48ad4f717d91249168c5136662c2b2e0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2739357163790527721
 PrefabInstance:
   m_ObjectHideFlags: 0

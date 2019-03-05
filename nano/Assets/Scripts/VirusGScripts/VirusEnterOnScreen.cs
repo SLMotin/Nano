@@ -2,36 +2,28 @@ using System;
 using UnityEngine;
 public class VirusEnterOnScreen : MonoBehaviour, IEnterOnScreen{
     public bool HasEndedEnterOnScreen { get; set; }
-    private bool HasEndedAnimation;
-    private float IdleTimeAfterAnimation;
-    public bool HasStartedAnimation { get; set; }
     public ICanEnterOnScreen CanEnterOnScreen { get; set; }
-    Animator animator;
-    public int EnterScreenAnimationNumber;
+    public float animationTime = 0f;
+    public Vector3 origin;
+    public bool instantiateOrigin = false;
     void Awake(){
         CanEnterOnScreen = GetComponent<ICanEnterOnScreen>();
-        animator = GetComponent<Animator>();
         HasEndedEnterOnScreen = false;
-        HasStartedAnimation = false;
-        HasEndedAnimation = false;
-        IdleTimeAfterAnimation = 60f;
+    }
+    public void EnterOnScreen(){
+        if(CanEnterOnScreen.CanEnterOnScreen()){
+            if(!instantiateOrigin)
+                origin = transform.position;
+            instantiateOrigin = true;
+
+            float x = animationTime;
+            float y = x*x - 6f*x;
+            transform.position = origin + new Vector3(x, y, 0);
+            print(origin + " " + transform.position + " " + animationTime + " " + new Vector3(x, y, 0));
+            animationTime += Time.deltaTime;
+        }
+        else
+            print(transform.position);
     }
 
-    public void EnterOnScreen(){
-        if(CanEnterOnScreen.CanEnterOnScreen() && !HasStartedAnimation){
-            HasStartedAnimation = true;
-            animator.SetInteger("PlayAnimationNumber", EnterScreenAnimationNumber);
-        }
-        else if(IdleTimeAfterAnimation > 0f && HasEndedAnimation){
-            IdleTimeAfterAnimation -= Time.deltaTime;
-        }
-        else if(IdleTimeAfterAnimation <= 0f)
-            HasEndedEnterOnScreen = true;
-    }
-    public void EndedEnterOnScreenAnimation(){
-        Vector3 position = transform.position;
-        HasEndedAnimation = true;
-        animator.enabled = false;
-        transform.position = position;
-    }
 }
