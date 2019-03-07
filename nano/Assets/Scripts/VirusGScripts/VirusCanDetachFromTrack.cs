@@ -9,7 +9,7 @@ public class VirusCanDetachFromTrack : MonoBehaviour, ICanDetachFromTrack{
         Vector2 topRight = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width * 1.5f, Screen.height * 1.33f));
         Vector2 bottomLeft = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width * -0.5f, Screen.height * -0.33f));
         Vector2 pos = transform.position;
-        if(topRight.x >= pos.x && topRight.y >= pos.y && bottomLeft.x <= pos.x && bottomLeft.y <= pos.y)
+        if(topRight.y >= pos.y && bottomLeft.y <= pos.y)
             canDetach = true;
         return canDetach;
     }
