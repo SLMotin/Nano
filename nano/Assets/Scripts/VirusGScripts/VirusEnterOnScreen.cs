@@ -6,8 +6,9 @@ public class VirusEnterOnScreen : MonoBehaviour, IEnterOnScreen{
     private float animationTime = 0f;
     private Vector3 origin;
     private bool instantiateOrigin = false;
-    public float a, b, c, speed = 1f;
+    public float a, b, c, secondPhaseTime, speed = 1f;
     private float directionAnimation;
+    private bool EnterOnScreenPhaseOne = true;
     void Awake(){
         CanEnterOnScreen = GetComponent<ICanEnterOnScreen>();
         HasEndedEnterOnScreen = false;
@@ -16,15 +17,20 @@ public class VirusEnterOnScreen : MonoBehaviour, IEnterOnScreen{
         if(CanEnterOnScreen.CanEnterOnScreen()){
             CalculateOrigin();
 
-            if(!HasEndedEnterOnScreen){
+            if(EnterOnScreenPhaseOne){
                 float x = animationTime;
                 float y = a*x*x + b*x + c;
                 transform.position = origin + new Vector3(x, y, 0);
-            
+
                 animationTime += directionAnimation * Time.deltaTime * speed;
             }
-            if(!HasEndedEnterOnScreen && directionAnimation * PontoDaCurva() < directionAnimation * animationTime)
-                HasEndedEnterOnScreen = true;
+            if(!HasEndedEnterOnScreen && directionAnimation * PontoDaCurva() < directionAnimation * animationTime){
+                EnterOnScreenPhaseOne = false;
+                if(secondPhaseTime > 0)
+                    secondPhaseTime -= Time.deltaTime;
+                else
+                    HasEndedEnterOnScreen = true;
+            }
         }
     }
 
