@@ -172,7 +172,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fb352d9a2d4c48968eb3016e9451720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnterScreenAnimationNumber: 0
+  a: 0
+  b: 0
+  c: 0
+  secondPhaseTime: 0
+  speed: 1
 --- !u!114 &5625688079911507560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,6 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bca3cfa8619b34a63926abd18c4a8368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  life: 80
 --- !u!114 &8989807853764205178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a294c95e8cd48f0a310e369710a686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &3372575893263791341
 MonoBehaviour:
   m_ObjectHideFlags: 0

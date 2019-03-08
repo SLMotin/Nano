@@ -68,10 +68,10 @@ GameObject:
   - component: {fileID: 6574766026724516369}
   - component: {fileID: 8819320447125573112}
   - component: {fileID: 1863865726359141198}
-  - component: {fileID: 3471532265908540163}
   - component: {fileID: 8434829416027924446}
   - component: {fileID: 4486606655189993815}
   - component: {fileID: 3670559102129687954}
+  - component: {fileID: 4021827942101933291}
   m_Layer: 0
   m_Name: virusP
   m_TagString: Enemy
@@ -191,18 +191,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43574d8365755444be91cffc7bbf7e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3471532265908540163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2112211991956793845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bac65377da1ca458abd40e59a92e6a73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8434829416027924446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,6 +227,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3c58a95cb5258f4fa3bc5178efb2436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4021827942101933291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112211991956793845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca3cfa8619b34a63926abd18c4a8368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
 --- !u!1 &4172970447183750378
 GameObject:
   m_ObjectHideFlags: 0

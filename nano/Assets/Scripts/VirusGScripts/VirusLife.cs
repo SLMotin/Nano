@@ -1,12 +1,19 @@
 using System;
 using UnityEngine;
 public class VirusLife : MonoBehaviour, IHaveLife{
-    public int Life { get; set; }
+    [SerializeField]
+    private int life;
+    public int Life {
+        get{
+            return life;
+        }
+        set{
+            life = value;
+        }
+    }
+
     public event Action OnGotHit = delegate { };
     public event Action OnDied = delegate { };
-    void Awake(){
-        Life = 80;
-    }
     public void OnTriggerEnter2D(Collider2D col){
         if(col.tag == "NormalBullet"){
             Life -= 1;
