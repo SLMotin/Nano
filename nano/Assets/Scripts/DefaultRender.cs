@@ -23,7 +23,6 @@ public class DefaultRender : MonoBehaviour, IRender{
     }
 
     public void Render(){
-        if(CanRender())
-            graph.SetActive(true);
+        graph.SetActive(CanRender());
     }
 }
