@@ -14,7 +14,10 @@ public class VirusPMove : MonoBehaviour, IMove{
         player = GameObject.FindGameObjectWithTag("Player");
     }
     void Update(){
-        DetachFromTrack.DetachFromTrack();
+        if(DetachFromTrack != null)
+            DetachFromTrack.DetachFromTrack();
+        if(EnterOnScreen != null)
+            EnterOnScreen.EnterOnScreen();
         Move();
     }
     public void Move(){

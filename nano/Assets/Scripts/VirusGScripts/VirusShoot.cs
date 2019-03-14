@@ -38,6 +38,7 @@ public class VirusShoot : MonoBehaviour, IShoot{
     public void Shoot(){
         if(CanShoot()){
             GameObject te = Instantiate(ProjectilePrefab);
+            te.AddComponent(typeof(VirusSummonEnterOnScreen));
             te.transform.position = transform.position;
         }
     }
