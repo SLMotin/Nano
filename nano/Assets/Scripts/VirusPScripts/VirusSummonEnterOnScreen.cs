@@ -19,7 +19,7 @@ public class VirusSummonEnterOnScreen : MonoBehaviour, IEnterOnScreen{
     }
     public void EnterOnScreen(){
         if(!HasEndedEnterOnScreen){
-            transform.position += (Vector3)direction * timeShoot * 0.15f;
+            transform.position += (Vector3)direction * timeShoot * 0.12f;
 
             timeShoot -= Time.deltaTime;
             if(timeShoot <= 0)
