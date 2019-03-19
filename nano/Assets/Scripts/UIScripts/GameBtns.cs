@@ -5,6 +5,15 @@ using UnityEngine;
 using TMPro;
 
 public class GameBtns : MonoBehaviour{
+
+    GameObject BlackLayer;
+    GameObject ChangeAmmoBtn;
+    void Awake(){
+        BlackLayer = GameObject.Find("BlackLayer"); BlackLayer.SetActive(false);
+        ChangeAmmoBtn = GameObject.Find("ChangeAmmo");
+    }
+
+
     public event Action OnChangeAmmo = delegate{};
     public void ChangeAmmo(){
         OnChangeAmmo();
@@ -14,6 +23,8 @@ public class GameBtns : MonoBehaviour{
     public event Action OnPause = delegate{};
     public void Pause(){
         Time.timeScale = (Time.timeScale + 1) % 2;
+        BlackLayer.SetActive(!BlackLayer.activeSelf);
+        ChangeAmmoBtn.SetActive(!ChangeAmmoBtn.activeSelf);
         OnPause();
     }
 
