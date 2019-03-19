@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 8989807853764205178}
   - component: {fileID: 3372575893263791341}
   - component: {fileID: 2830525267914140061}
+  - component: {fileID: 7029429929051744430}
   m_Layer: 0
   m_Name: virusG
   m_TagString: Enemy
@@ -239,6 +240,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3c58a95cb5258f4fa3bc5178efb2436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7029429929051744430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5905678130460001387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7024740106d2d48698494641ec03b3a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2739357163790527721
