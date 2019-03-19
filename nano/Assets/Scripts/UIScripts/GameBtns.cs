@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameBtns : MonoBehaviour{
@@ -9,7 +10,9 @@ public class GameBtns : MonoBehaviour{
     GameObject BlackLayer;
     GameObject ChangeAmmoBtn;
     void Awake(){
-        BlackLayer = GameObject.Find("BlackLayer"); BlackLayer.SetActive(false);
+        BlackLayer = GameObject.Find("BlackLayer");
+        if(BlackLayer != null)
+            BlackLayer.SetActive(false);
         ChangeAmmoBtn = GameObject.Find("ChangeAmmo");
     }
 
@@ -23,8 +26,10 @@ public class GameBtns : MonoBehaviour{
     public event Action OnPause = delegate{};
     public void Pause(){
         Time.timeScale = (Time.timeScale + 1) % 2;
-        BlackLayer.SetActive(!BlackLayer.activeSelf);
-        ChangeAmmoBtn.SetActive(!ChangeAmmoBtn.activeSelf);
+        if(BlackLayer != null)
+            BlackLayer.SetActive(!BlackLayer.activeSelf);
+        if(ChangeAmmoBtn != null)
+            ChangeAmmoBtn.SetActive(!ChangeAmmoBtn.activeSelf);
         OnPause();
     }
 
@@ -34,5 +39,10 @@ public class GameBtns : MonoBehaviour{
         text = transform.Find("CounterStrike").GetComponent<TextMeshProUGUI>();
         enemyDown++;
         text.text = enemyDown.ToString();
+    }
+
+
+    public void LoadFase1(){
+        SceneManager.LoadScene("Fase 1");
     }
 }
