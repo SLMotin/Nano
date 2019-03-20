@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 3372575893263791341}
   - component: {fileID: 2830525267914140061}
   - component: {fileID: 7029429929051744430}
+  - component: {fileID: 117480877139347296}
   m_Layer: 0
   m_Name: virusG
   m_TagString: Enemy
@@ -254,6 +255,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7024740106d2d48698494641ec03b3a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &117480877139347296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5905678130460001387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5af68ca9c5ce20c4f9b584ac71311da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfProjectiles: 6
 --- !u!1001 &2739357163790527721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -264,14 +278,6 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
       propertyPath: m_Name
       value: virus
-      objectReference: {fileID: 0}
-    - target: {fileID: 400030, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400030, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -328,6 +334,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.2987267
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 21200012, guid: 1548ae64cecd14d25974f4257f298bb3, type: 3}
       propertyPath: m_SortingOrder
