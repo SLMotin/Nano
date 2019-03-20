@@ -829,7 +829,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145176812}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 270.6, z: -0.53125}
+  m_LocalPosition: {x: 0, y: 250, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 918131535}
@@ -1172,7 +1172,7 @@ GameObject:
   - component: {fileID: 187687924}
   - component: {fileID: 187687923}
   m_Layer: 0
-  m_Name: Foreground2 (1)
+  m_Name: Foreground2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1482,7 +1482,7 @@ GameObject:
   - component: {fileID: 272395211}
   - component: {fileID: 272395210}
   m_Layer: 0
-  m_Name: Background1 (1)
+  m_Name: Background1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4188,7 +4188,7 @@ GameObject:
   - component: {fileID: 582714344}
   - component: {fileID: 582714343}
   m_Layer: 0
-  m_Name: Main Camera (1)
+  m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6636,7 +6636,7 @@ GameObject:
   - component: {fileID: 918131535}
   - component: {fileID: 918131534}
   m_Layer: 0
-  m_Name: Esteira de Virus (1)
+  m_Name: Esteira de Virus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7553,7 +7553,7 @@ GameObject:
   - component: {fileID: 1055945019}
   - component: {fileID: 1055945018}
   m_Layer: 0
-  m_Name: Background3 (1)
+  m_Name: Background3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8478,7 +8478,7 @@ GameObject:
   - component: {fileID: 1265142035}
   - component: {fileID: 1265142034}
   m_Layer: 0
-  m_Name: BG (3)
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9919,7 +9919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1510901041}
   m_Layer: 0
-  m_Name: Foreground1 (1)
+  m_Name: Foreground1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10044,7 +10044,7 @@ GameObject:
   - component: {fileID: 1535862297}
   - component: {fileID: 1535862296}
   m_Layer: 5
-  m_Name: Canvas (1)
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11189,7 +11189,7 @@ GameObject:
   - component: {fileID: 1752050303}
   - component: {fileID: 1752050302}
   m_Layer: 0
-  m_Name: SpaceShip (1)
+  m_Name: SpaceShip
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12605,7 +12605,7 @@ GameObject:
   - component: {fileID: 1964798696}
   - component: {fileID: 1964798695}
   m_Layer: 0
-  m_Name: Background2 (1)
+  m_Name: Background2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12670,7 +12670,7 @@ GameObject:
   - component: {fileID: 1974921761}
   - component: {fileID: 1974921760}
   m_Layer: 0
-  m_Name: BG (2)
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

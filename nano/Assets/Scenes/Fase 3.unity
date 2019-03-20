@@ -1228,7 +1228,7 @@ GameObject:
   - component: {fileID: 261524757}
   - component: {fileID: 261524756}
   m_Layer: 0
-  m_Name: BG (6)
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1408,7 +1408,7 @@ GameObject:
   - component: {fileID: 297212371}
   - component: {fileID: 297212370}
   m_Layer: 0
-  m_Name: SpaceShip (3)
+  m_Name: SpaceShip
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2765,7 +2765,7 @@ GameObject:
   - component: {fileID: 487972212}
   - component: {fileID: 487972211}
   m_Layer: 0
-  m_Name: Foreground2 (3)
+  m_Name: Foreground2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3411,7 +3411,7 @@ GameObject:
   - component: {fileID: 566532261}
   - component: {fileID: 566532260}
   m_Layer: 0
-  m_Name: BG (7)
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6250,7 +6250,7 @@ GameObject:
   - component: {fileID: 1030168530}
   - component: {fileID: 1030168529}
   m_Layer: 5
-  m_Name: Canvas (3)
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6708,7 +6708,7 @@ GameObject:
   - component: {fileID: 1102459682}
   - component: {fileID: 1102459681}
   m_Layer: 0
-  m_Name: Esteira de Virus (1)
+  m_Name: Esteira de Virus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7431,7 +7431,7 @@ GameObject:
   - component: {fileID: 1194577283}
   - component: {fileID: 1194577282}
   m_Layer: 0
-  m_Name: Background3 (3)
+  m_Name: Background3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9185,7 +9185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1561845777}
   m_Layer: 0
-  m_Name: Foreground1 (3)
+  m_Name: Foreground1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9310,7 +9310,7 @@ GameObject:
   - component: {fileID: 1637581333}
   - component: {fileID: 1637581332}
   m_Layer: 0
-  m_Name: Main Camera (3)
+  m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9579,7 +9579,7 @@ GameObject:
   - component: {fileID: 1692799982}
   - component: {fileID: 1692799981}
   m_Layer: 0
-  m_Name: Background2 (3)
+  m_Name: Background2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10663,7 +10663,7 @@ GameObject:
   - component: {fileID: 1880223476}
   - component: {fileID: 1880223475}
   m_Layer: 0
-  m_Name: Background1 (3)
+  m_Name: Background1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
