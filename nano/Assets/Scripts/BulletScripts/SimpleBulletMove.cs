@@ -9,7 +9,7 @@ public class SimpleBulletMove : MonoBehaviour, IMove {
 	void Awake () {
 		rb = GetComponent<Rigidbody2D>();
 	}
-	void Update () {
+	void FixedUpdate () {
 		Move();
 	}
 	public void Move(){

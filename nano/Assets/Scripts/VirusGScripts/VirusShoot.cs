@@ -15,7 +15,7 @@ public class VirusShoot : MonoBehaviour, IShoot{
     void Awake(){
         spanwTime = maxSpanwTime;
     }
-    void Update(){
+    void FixedUpdate(){
         Shoot();
     }
     public bool CanShoot(){
@@ -24,7 +24,7 @@ public class VirusShoot : MonoBehaviour, IShoot{
 
         if(transform.position.x > botLeftCamera.x && transform.position.x < topRightCamera.x && transform.position.y > botLeftCamera.y && transform.position.y < topRightCamera.y){
             if(spanwTime <= 0){
-             spanwTime = maxSpanwTime;
+                spanwTime = maxSpanwTime;
                 return true;
             }
             else{
