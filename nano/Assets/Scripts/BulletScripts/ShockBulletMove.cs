@@ -19,3 +19,6 @@ public class ShockBulletMove : MonoBehaviour, IMove {
             Destroy(gameObject);
 	}
 }
+
+
+

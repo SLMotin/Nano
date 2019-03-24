@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/menu temporario.unity
+    path: Assets/Scenes/Menu temporario.unity
     guid: c94df0127bcb4dc49a305968e8fdd32e
   - enabled: 1
     path: Assets/Scenes/Fase 1.unity
