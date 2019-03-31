@@ -1,8 +1,10 @@
 fileFormatVersion: 2
-guid: 19595c9bbd80ee94190e31431c0144ea
+guid: 7d800fc86e9748a4393a074e96b77df0
 TextureImporter:
   fileIDToRecycleName:
-    21300000: mapa corpo humano_0
+    21300000: Prancheta 1_0
+    21300002: Prancheta 1_1
+    21300004: Prancheta 1_2
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -82,17 +84,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -118,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mapa corpo humano_0
+      name: Prancheta 1_0
       rect:
         serializedVersion: 2
-        x: 1702
-        y: 948
-        width: 620
-        height: 1091
+        x: 2174
+        y: 1072
+        width: 621
+        height: 1090
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,7 +123,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4343c684d3e9e8c499378640784c5a56
+      spriteID: 275c02363f925f840a612636ff2cc40a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prancheta 1_1
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 1072
+        width: 621
+        height: 1090
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb22328ebd3f879408f71e795f220d98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prancheta 1_2
+      rect:
+        serializedVersion: 2
+        x: 3602
+        y: 1072
+        width: 621
+        height: 1090
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7476c339c64d4d742907262c3ad7225c
       vertices: []
       indices: 
       edges: []
@@ -140,7 +171,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 32989f278c67ac649886e98efa34c115
+    spriteID: 142b1f39e6f218d4b985931a662733d6
     vertices: []
     indices: 
     edges: []
