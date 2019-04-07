@@ -3,11 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DefaultRender : MonoBehaviour, IRender{
-    GameObject graph;
-    void Awake(){
-        graph = gameObject.transform.GetChild(0).gameObject;
-    }
-
     void Update(){
         Render();
     }
@@ -23,6 +18,10 @@ public class DefaultRender : MonoBehaviour, IRender{
     }
 
     public void Render(){
-        graph.SetActive(CanRender());
+        Transform child = gameObject.transform.GetChild(0);
+        if(child != null)
+            child.gameObject.SetActive(CanRender());
+        else
+            Destroy(gameObject);
     }
 }
