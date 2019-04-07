@@ -28,7 +28,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6369533010466460144}
+  - {fileID: 1295670446673394249}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45,37 +45,61 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notes: 1 virus grande
+--- !u!1 &2250795928112976463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1295670446673394249}
+  - component: {fileID: 8306782730417842540}
+  m_Layer: 0
+  m_Name: Render
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1295670446673394249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2250795928112976463}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6369533010466460144}
+  m_Father: {fileID: 1471973276545230720}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8306782730417842540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2250795928112976463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7024740106d2d48698494641ec03b3a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1471973275949897377
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1471973276545230720}
+    m_TransformParent: {fileID: 1295670446673394249}
     m_Modifications:
     - target: {fileID: 5905678130460001387, guid: 090f5fc0e7ebd4796a9616fee5dd29da,
         type: 3}
       propertyPath: m_Name
       value: virusG
-      objectReference: {fileID: 0}
-    - target: {fileID: 4053422201254501570, guid: 090f5fc0e7ebd4796a9616fee5dd29da,
-        type: 3}
-      propertyPath: a
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4053422201254501570, guid: 090f5fc0e7ebd4796a9616fee5dd29da,
-        type: 3}
-      propertyPath: b
-      value: -4.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4053422201254501570, guid: 090f5fc0e7ebd4796a9616fee5dd29da,
-        type: 3}
-      propertyPath: speed
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4053422201254501570, guid: 090f5fc0e7ebd4796a9616fee5dd29da,
-        type: 3}
-      propertyPath: secondPhaseTime
-      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5478733829229692753, guid: 090f5fc0e7ebd4796a9616fee5dd29da,
         type: 3}
@@ -131,6 +155,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053422201254501570, guid: 090f5fc0e7ebd4796a9616fee5dd29da,
+        type: 3}
+      propertyPath: a
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053422201254501570, guid: 090f5fc0e7ebd4796a9616fee5dd29da,
+        type: 3}
+      propertyPath: b
+      value: -4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053422201254501570, guid: 090f5fc0e7ebd4796a9616fee5dd29da,
+        type: 3}
+      propertyPath: speed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053422201254501570, guid: 090f5fc0e7ebd4796a9616fee5dd29da,
+        type: 3}
+      propertyPath: secondPhaseTime
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 090f5fc0e7ebd4796a9616fee5dd29da, type: 3}
