@@ -7,10 +7,11 @@ using TMPro;
 
 public class GameBtns : MonoBehaviour{
 
-    GameObject BlackLayer;
+    public GameObject BlackLayer;
     GameObject ChangeAmmoBtn;
     void Awake(){
-        BlackLayer = GameObject.Find("BlackLayer");
+        if(BlackLayer == null)
+            BlackLayer = GameObject.Find("BlackLayer");
         if(BlackLayer != null)
             BlackLayer.SetActive(false);
         ChangeAmmoBtn = GameObject.Find("ChangeAmmo");

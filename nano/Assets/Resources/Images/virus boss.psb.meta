@@ -1,0 +1,560 @@
+fileFormatVersion: 2
+guid: a6ebea2c82bff5a4aafdf93b468d00e5
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: virus boss_GO/virus boss_GO
+    100002: virus boss_GO/virus boss_GO/boca 1
+    100004: virus boss_GO/virus boss_GO/boca aberta_dor
+    100006: virus boss_GO/virus boss_GO/Camada 1
+    100008: virus boss_GO/virus boss_GO/Camada 2_dor
+    100010: virus boss_GO/virus boss_GO/Camada 3_dor
+    100012: virus boss_GO/virus boss_GO/Camada 4
+    100014: virus boss_GO/virus boss_GO/meleca
+    100016: virus boss_GO/virus boss_GO/nariz
+    100018: virus boss_GO/virus boss_GO/nariz_dor
+    100020: virus boss_GO/virus boss_GO/tentaculo back copiar 2
+    100022: virus boss_GO/virus boss_GO/tentaculo dir
+    100024: virus boss_GO/virus boss_GO/tentaculo esq
+    100026: virus boss_GO/virus boss_GO/tentaculo frente copiar
+    100028: virus boss_GO/virus boss_GO/tentaculo meio
+    400000: virus boss_GO/virus boss_GO/Transform
+    400002: virus boss_GO/virus boss_GO/boca 1/Transform
+    400004: virus boss_GO/virus boss_GO/boca aberta_dor/Transform
+    400006: virus boss_GO/virus boss_GO/Camada 1/Transform
+    400008: virus boss_GO/virus boss_GO/Camada 2_dor/Transform
+    400010: virus boss_GO/virus boss_GO/Camada 3_dor/Transform
+    400012: virus boss_GO/virus boss_GO/Camada 4/Transform
+    400014: virus boss_GO/virus boss_GO/meleca/Transform
+    400016: virus boss_GO/virus boss_GO/nariz/Transform
+    400018: virus boss_GO/virus boss_GO/nariz_dor/Transform
+    400020: virus boss_GO/virus boss_GO/tentaculo back copiar 2/Transform
+    400022: virus boss_GO/virus boss_GO/tentaculo dir/Transform
+    400024: virus boss_GO/virus boss_GO/tentaculo esq/Transform
+    400026: virus boss_GO/virus boss_GO/tentaculo frente copiar/Transform
+    400028: virus boss_GO/virus boss_GO/tentaculo meio/Transform
+    2800000: virus boss
+    21200000: virus boss_GO/virus boss_GO/boca 1/SpriteRenderer
+    21200002: virus boss_GO/virus boss_GO/boca aberta_dor/SpriteRenderer
+    21200004: virus boss_GO/virus boss_GO/Camada 1/SpriteRenderer
+    21200006: virus boss_GO/virus boss_GO/Camada 2_dor/SpriteRenderer
+    21200008: virus boss_GO/virus boss_GO/Camada 3_dor/SpriteRenderer
+    21200010: virus boss_GO/virus boss_GO/Camada 4/SpriteRenderer
+    21200012: virus boss_GO/virus boss_GO/meleca/SpriteRenderer
+    21200014: virus boss_GO/virus boss_GO/nariz/SpriteRenderer
+    21200016: virus boss_GO/virus boss_GO/nariz_dor/SpriteRenderer
+    21200018: virus boss_GO/virus boss_GO/tentaculo back copiar 2/SpriteRenderer
+    21200020: virus boss_GO/virus boss_GO/tentaculo dir/SpriteRenderer
+    21200022: virus boss_GO/virus boss_GO/tentaculo esq/SpriteRenderer
+    21200024: virus boss_GO/virus boss_GO/tentaculo frente copiar/SpriteRenderer
+    21200026: virus boss_GO/virus boss_GO/tentaculo meio/SpriteRenderer
+    21300000: nariz_dor
+    21300002: Camada 3_dor
+    21300004: Camada 2_dor
+    21300006: boca aberta_dor
+    21300008: tentaculo meio
+    21300010: tentaculo dir
+    21300012: tentaculo esq
+    21300014: tentaculo frente copiar
+    21300016: meleca
+    21300018: boca 1
+    21300020: Camada 1
+    21300022: nariz
+    21300024: Camada 4
+    21300026: tentaculo back copiar 2
+    100100000: virus boss_GO
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: nariz_dor
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1808
+      y: 970
+      width: 103
+      height: 39
+    spriteID: 5235727645c9e014ea13046d49c64de0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 876, y: 449}
+  - name: Camada 3_dor
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1368
+      y: 1045
+      width: 429
+      height: 193
+    spriteID: 7dccc7a705b25594cbf82773100a2537
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 622, y: 498}
+  - name: Camada 2_dor
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1805
+      y: 1045
+      width: 187
+      height: 82
+    spriteID: 0b863fdc7a4ca884caa445802ae77640
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 993, y: 766}
+  - name: boca aberta_dor
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1368
+      y: 1246
+      width: 344
+      height: 189
+    spriteID: 78833babe8bd5a34ab253b45e29a39e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 569, y: 914}
+  - name: tentaculo meio
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1368
+      y: 1597
+      width: 132
+      height: 111
+    spriteID: dd820126b5fccb74691a475c376095b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 501, y: 866}
+  - name: tentaculo dir
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1808
+      y: 844
+      width: 218
+      height: 118
+    spriteID: e82e428430a89c94bbfdade45ade7848
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1161, y: 73}
+  - name: tentaculo esq
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1368
+      y: 1443
+      width: 270
+      height: 146
+    spriteID: eccbb98c6d8d4104781baddfa12d68ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 344, y: 663}
+  - name: tentaculo frente copiar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 984
+      height: 990
+    spriteID: 20852cf3b2002bb4e928877a8a9dc035
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -475, y: -18}
+  - name: meleca
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1646
+      y: 1443
+      width: 42
+      height: 106
+    spriteID: 5c326fa1af752024a995f6c42fc1f059
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 663, y: 1009}
+  - name: boca 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 996
+      y: 844
+      width: 364
+      height: 230
+    spriteID: 585897d803666f642b3161180901b5c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 208, y: 566}
+  - name: Camada 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1368
+      y: 844
+      width: 432
+      height: 193
+    spriteID: 56a1409e6e19122449d8d0cfd637ad09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 625, y: 297}
+  - name: nariz
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1919
+      y: 970
+      width: 103
+      height: 39
+    spriteID: d5316219ac4f9ef4bbac89ca5c0e5c4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 988, y: 449}
+  - name: Camada 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 996
+      y: 4
+      width: 822
+      height: 832
+    spriteID: e658803111b942d41b2fa049e6e3e84a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 447, y: -120}
+  - name: tentaculo back copiar 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1002
+      width: 972
+      height: 971
+    spriteID: cdc10ef6a9f40a14eb57acfaabacb4b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -479, y: 979}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 1920, y: 1080}
+  textureActualWidth: 2048
+  textureActualHeight: 2048
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: nariz_dor
+    spriteName: nariz_dor
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5235727645c9e014ea13046d49c64de0
+    layerID: 21
+    mosaicPosition: {x: 1808, y: 970}
+  - name: Camada 3_dor
+    spriteName: Camada 3_dor
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7dccc7a705b25594cbf82773100a2537
+    layerID: 20
+    mosaicPosition: {x: 1368, y: 1045}
+  - name: Camada 2_dor
+    spriteName: Camada 2_dor
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0b863fdc7a4ca884caa445802ae77640
+    layerID: 18
+    mosaicPosition: {x: 1805, y: 1045}
+  - name: boca aberta_dor
+    spriteName: boca aberta_dor
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 78833babe8bd5a34ab253b45e29a39e6
+    layerID: 19
+    mosaicPosition: {x: 1368, y: 1246}
+  - name: tentaculo meio
+    spriteName: tentaculo meio
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dd820126b5fccb74691a475c376095b7
+    layerID: 9
+    mosaicPosition: {x: 1368, y: 1597}
+  - name: tentaculo dir
+    spriteName: tentaculo dir
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e82e428430a89c94bbfdade45ade7848
+    layerID: 8
+    mosaicPosition: {x: 1808, y: 844}
+  - name: tentaculo esq
+    spriteName: tentaculo esq
+    isGroup: 0
+    parentIndex: -1
+    spriteID: eccbb98c6d8d4104781baddfa12d68ae
+    layerID: 7
+    mosaicPosition: {x: 1368, y: 1443}
+  - name: tentaculo frente copiar
+    spriteName: tentaculo frente copiar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 20852cf3b2002bb4e928877a8a9dc035
+    layerID: 13
+    mosaicPosition: {x: 4, y: 4}
+  - name: meleca
+    spriteName: meleca
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5c326fa1af752024a995f6c42fc1f059
+    layerID: 6
+    mosaicPosition: {x: 1646, y: 1443}
+  - name: boca 1
+    spriteName: boca 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 585897d803666f642b3161180901b5c9
+    layerID: 5
+    mosaicPosition: {x: 996, y: 844}
+  - name: Camada 1
+    spriteName: Camada 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 56a1409e6e19122449d8d0cfd637ad09
+    layerID: 4
+    mosaicPosition: {x: 1368, y: 844}
+  - name: nariz
+    spriteName: nariz
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d5316219ac4f9ef4bbac89ca5c0e5c4f
+    layerID: 3
+    mosaicPosition: {x: 1919, y: 970}
+  - name: Camada 4
+    spriteName: Camada 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e658803111b942d41b2fa049e6e3e84a
+    layerID: 56
+    mosaicPosition: {x: 996, y: 4}
+  - name: tentaculo back copiar 2
+    spriteName: tentaculo back copiar 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cdc10ef6a9f40a14eb57acfaabacb4b6
+    layerID: 12
+    mosaicPosition: {x: 4, y: 1002}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+  boneGOs: []
+  firstCreate: 0
+  generateGOHierarchy: 0
