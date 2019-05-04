@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: ed87f0f3a286e624a9302600ef6ab02c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Panton Icons A Fill
+  fontNames:
+  - Panton Icons A Fill
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0bfebf04ed6ef9546a083ede8c733bc7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

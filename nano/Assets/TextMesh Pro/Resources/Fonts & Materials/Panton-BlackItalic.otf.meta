@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: a06613a25989b8d4f9f307fa86c4f186
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Panton Black
+  fontNames:
+  - Panton Black
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 675fc8390ac395044a4716a607ac6ad3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

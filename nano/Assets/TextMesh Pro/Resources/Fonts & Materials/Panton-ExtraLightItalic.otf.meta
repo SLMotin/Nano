@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: e89aa032270b4c1488228492a0a41f33
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Panton ExtraLight
+  fontNames:
+  - Panton ExtraLight
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 68db0e4598d91a64ba4f03a4ebacf5a8, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

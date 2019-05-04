@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: fa5488e210ee8ab4b947bf662abe16ec
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Panton Thin
+  fontNames:
+  - Panton Thin
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: be188694a5657764bb0fe0109befe81d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

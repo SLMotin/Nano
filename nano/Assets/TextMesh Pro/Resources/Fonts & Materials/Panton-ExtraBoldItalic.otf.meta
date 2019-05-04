@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 7a6e51f0fcb5437489b4c2740ddc3ded
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Panton ExtraBold
+  fontNames:
+  - Panton ExtraBold
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 65b05b1120213964399395a53185aba2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

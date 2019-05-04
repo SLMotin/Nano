@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: dad92f4c5a98b3f4ab863cd6a3d7c189
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Panton Light
+  fontNames:
+  - Panton Light
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a2f7c16f97733ff4daff9e34fee1b90b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

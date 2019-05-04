@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 4a6d5a5418622e24e801daeb59b1a6fb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Panton SemiBold
+  fontNames:
+  - Panton SemiBold
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 465a3e3d2fce58f4e84761ed47365bb0, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
