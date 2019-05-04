@@ -18,7 +18,9 @@ public class DefaultRender : MonoBehaviour, IRender{
     }
 
     public void Render(){
-        Transform child = gameObject.transform.GetChild(0);
+        Transform child = null;
+        if(gameObject.transform.childCount > 0)
+            child = gameObject.transform.GetChild(0);
         if(child != null)
             child.gameObject.SetActive(CanRender());
         else
