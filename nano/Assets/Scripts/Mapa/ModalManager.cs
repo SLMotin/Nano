@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ModalManager : MonoBehaviour{
-    public VariableInteger fase;
+    public VariableString fase;
     public GameObject LowPanel;
     public VariableBoolean2 modalOpen;
 
     public void play(){
-        SceneManager.LoadScene("Fase " + fase.value);
+        SceneManager.LoadScene(fase.value);
     }
     public void closeModal(){
         GetComponent<Animator>().SetTrigger("closeModal");

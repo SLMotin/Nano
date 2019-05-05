@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class BtnFase : MonoBehaviour{
     public int numFase;
-    public VariableInteger fase;
+    public string FaseName;
+    public VariableString faseNameObj;
     public VariableBoolean2 modalOpen;
     public FaseScriptableModel fases;
     public GameObject modal;
@@ -34,7 +35,9 @@ public class BtnFase : MonoBehaviour{
     }
 
     public void hehe(){
-        fase.value = numFase + 1;
+        faseNameObj.value = FaseName;
+        print(FaseName);
+        print(faseNameObj.value);
         modal.GetComponent<Animator>().SetTrigger("openModal");
         LowPanel.GetComponent<Animator>().SetTrigger("godown");
         modalOpen.value = true;

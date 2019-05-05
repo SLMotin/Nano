@@ -5213,6 +5213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6749091d387c1468ef21d2009d4f8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BlackLayer: {fileID: 0}
 --- !u!1 &881322503
 GameObject:
   m_ObjectHideFlags: 0
@@ -7532,6 +7533,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6369533010466460144, guid: 10996986efd544464b50bde78e6f6219,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.0987597
+      objectReference: {fileID: 0}
     - target: {fileID: 3183440073515879011, guid: 10996986efd544464b50bde78e6f6219,
         type: 3}
       propertyPath: b
@@ -7541,11 +7547,6 @@ PrefabInstance:
         type: 3}
       propertyPath: c
       value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6369533010466460144, guid: 10996986efd544464b50bde78e6f6219,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.0987597
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10996986efd544464b50bde78e6f6219, type: 3}
@@ -9274,6 +9275,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6369533010466460144, guid: 10996986efd544464b50bde78e6f6219,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.0987597
+      objectReference: {fileID: 0}
     - target: {fileID: 3183440073515879011, guid: 10996986efd544464b50bde78e6f6219,
         type: 3}
       propertyPath: b
@@ -9283,11 +9289,6 @@ PrefabInstance:
         type: 3}
       propertyPath: c
       value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6369533010466460144, guid: 10996986efd544464b50bde78e6f6219,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.0987597
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10996986efd544464b50bde78e6f6219, type: 3}
@@ -9679,7 +9680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea46a7d24bbd7a4aa8bcdc0bbada56d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextFase: menu temporario
+  nextFase: Entrada
 --- !u!65 &1693587866
 BoxCollider:
   m_ObjectHideFlags: 0
