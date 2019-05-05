@@ -24,6 +24,6 @@ public class BtnFase : MonoBehaviour{
     }
 
     public void hehe(){
-        print("hehe");
+        
     }
 }
